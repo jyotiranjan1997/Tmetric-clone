@@ -1,0 +1,352 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+#homepage{
+    margin-top: 4%;
+}
+
+/* =========================================================
+Top Section CSS Starts Here
+========================================================= */
+
+#topSection{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255,240,184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.flatemail{
+    width: 70%;
+    /* padding: 5px; */
+    /* border: 1px solid red; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rowAllignItemCenter{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+#col-left{
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#col-left>h1{
+    font-size: 2.25rem;
+    font:bold 3.75rem/1.066 ObjectivityBold,sans-serif;
+    color: #292e33;
+}
+#col-left>p{
+    font:bold 1.15rem/1.4 PTRootUIBold,sans-serif;
+    margin-top: -20px;
+    color: #292e33;
+}
+#col-right{
+    width: 50%;
+    position: relative;
+    /* padding: 50px; */
+}
+#col-right>img{
+    width: 100%;
+    /* height: 100%; */
+   
+}
+#newsletter{
+    display: flex;
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 5px;
+    
+}
+#newsletter>input{
+    /* border: 1.3px solid rgb(97, 97, 97); */
+    border: none;
+    width: 95%;
+    padding-left: 20px;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+#icon{
+    border-right: 1.3px solid rgb(97,97,97);
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px
+}
+#btn-area{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+#btn-area>p{
+    margin-top: 8px;
+}
+#btn-area>button{
+    padding: 5px 50px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgb(11, 75, 203);
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+}
+#box{
+    
+    position: relative;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%, -75%);
+    background: #212529;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: -24px 24px 48px rgb(0 0 0 / 16%), -12px 12px 24px rgb(0 0 0 / 12%), 0px 0px 4px rgb(0 0 0 / 24%), inset 0.5px -0.5px 0.5px rgb(0 0 0 / 8%);
+    text-indent: -9999px;
+    overflow: hidden;
+    transition: background .5s ease;
+
+}
+#box>img{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: url("/images/v3/icon-play.svg") no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+/* =========================================================
+Top Section CSS End Here
+========================================================= */
+
+/* =========================================================
+Brands Section CSS Starts Here
+========================================================= */
+
+#brandsSection{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(auto);
+    gap:20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#brandsSection>div>img{
+    width: 90%;
+}
+#brandsSection>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#brandsMain{
+    border-bottom: 1px solid rgb(219, 219, 219);
+    margin-bottom: 5%;
+}
+
+
+@media all and (min-width:0px) and (max-width:767px){
+    
+/* =========================================================
+Top Section Media Query Starts Here - Small Screen
+========================================================= */
+
+    #col-right{
+        display: none;
+    }
+    #box{
+        overflow: hidden;   
+        visibility: hidden;
+    }
+    #btn-area{
+        display: block;
+
+    }
+    #col-left{
+        width: 100%;
+        text-align: center;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #col-left>h1{
+        font:bold 2.55rem/1.066 ObjectivityBold,sans-serif;
+    }
+    #newsletter{
+        margin-left: 10%;
+        
+    }
+    input{
+        padding-right: 10px;
+    }
+    button{
+        width: 80%;
+        font-size: 10%;
+    }
+    #col-left>p{
+        font:bold 1.1rem/1.6 PTRootUIBold,sans-serif;
+        margin-top: 10px;
+    }
+    
+/* =========================================================
+Top Section Media Query End Here - Small Screen
+========================================================= */
+
+   
+}
+@media all and (min-width:768px) and (max-width:1024px){
+    
+/* =========================================================
+Top Section Media Query Starts Here - Medium Screen
+========================================================= */
+
+    .rowAllignItemCenter{
+        display: block;
+        text-align: center;
+        
+    }
+    #col-left{
+        width: 100%;
+    }
+    #col-right{
+        width: 100%;
+        margin-left: 0px;
+    }
+    #box{
+            position: absolute;
+            top: 40%;
+    }
+    #col-right{
+        position: relative;
+    }
+    
+    #col-right{
+        padding: 0px;
+        margin-top: 0%;
+    }
+    #col-left>h1{
+        font:bold 2.55rem/1.066 ObjectivityBold,sans-serif;
+    }
+    #col-left>p{
+        font:bold 1.15rem/1.4 PTRootUIBold,sans-serif;
+    }
+    #newsletter{
+       margin-left: 10%;
+       
+    }
+    #btn-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+/* =========================================================
+Top Section Media Query End Here - Medium Screen
+========================================================= */
+
+}
+
+
+
+
+
+/* ===================================================
+Media Query For Brands Logo Starts
+=================================================== */
+
+@media all and (min-width:0px) and (max-width:461px){
+    #brandsSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:30px
+        
+    }
+    #brandsSection>div{
+        width: 40%;
+    }
+    #brandsMain{
+        margin-top: 10%;
+    }
+}
+@media all and (min-width:462px) and (max-width:565px){
+    #brandsSection>div{
+        width: 25%;
+    }
+    #brandsMain{
+        margin-top: 5%;
+    }
+    #brandsSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:30px
+        
+    }
+}
+@media all and (min-width:565px) and (max-width:669px){
+    #brandsSection>div{
+        width: 20%;
+    }
+    #brandsMain{
+        margin-top: 5%;
+    }
+    #brandsSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:30px
+        
+    }
+}
+@media all and (min-width:670px) and (max-width:773px){
+    #brandsSection>div{
+        width: 15%;
+    }
+    #brandsMain{
+        margin-top: 5%;
+    }
+    #brandsSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:30px
+        
+    }
+}
+
+/* ===================================================
+Media Query For Brands Logo End
+=================================================== */
