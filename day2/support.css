@@ -1,0 +1,105 @@
+#how_can_help{
+    margin-top: -10px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-color: rgb(255,242,204);
+}
+#how_can_help h1{
+    font-size: 75px;
+    color: rgb(41,46,51);
+    font-weight: bold;
+}
+#how_can_help input{
+    width: 550px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    
+    
+}
+#how_can_help div{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    border: 1px solid lightblue;
+    background-color: white;
+  border-radius: 10px;
+}
+#how_can_help i{
+    font-size: 30px;
+    margin-top: 5px;
+}
+#video_demo_main{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+#video_demo_main img{
+width: 90%;
+border-radius: 10px;
+}
+
+#video_demo h1{
+    text-align: center;
+    font-size: 45px;
+}
+#user_guid{
+   margin-top: 140px;
+}
+#user_guid_main{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    justify-content: space-around;
+    padding: 15px;
+
+}
+#user_guid_main div{
+    padding: 10px;
+   
+}
+#user_guid_main h3{
+    font-size: 22px;
+    color: blue;
+}
+#user_guid_main p{
+    width: 80%;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#user_guid h1{
+    text-align: center;
+    font-size: 46px;
+}
+#FAQ_main div ul{
+    font-size: 28px;
+}
+
+@media(max-width:900px){
+
+    #how_can_help div{
+        display: flex;
+    }
+    #how_can_help input{
+        font-size: 18px;
+    }
+    #video_demo_main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #user_guid_main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #user_guid{
+        margin-top: 80px;
+     }
+
+}
