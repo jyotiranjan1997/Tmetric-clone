@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(223, 233, 233);
+}
+#container{
+    width:90%;
+    margin: auto;
+    border:0.3px solid grey;
+    border-radius: 10px;
+    display: flex;
+}
+#container>div{
+    
+    width:50%;
+}
+
+
+#signup{
+    background-color: white;
+   padding:5% 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+input{
+    width: 100%;
+    padding:8px;
+    border-radius: 5px;
+    border: 0.2px solid rgb(199, 195, 195);
+    
+}
+#signup>div:nth-child(1),h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(141, 138, 138);
+}
+#subImg img{
+    width:100%;
+    padding:2%;
+}
+.pad{
+padding:1% 20%;
+margin-bottom: 1%;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(141, 138, 138);
+}
+button{
+width: 104%;
+padding: 8px;
+font-size: 15px;
+background-color: #5c88ff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+#sp p , #sp a{
+    text-align: center;
+}
+.pam{
+width: 61%;
+margin: auto;
+display: flex;
+gap:10px;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(141, 138, 138);
+border: 0.3px solid rgb(199, 195, 195);
+border-radius: 5px;
+margin-bottom: 1.5%;
+justify-content: center;
+align-items: center;
+padding: 4px;
+cursor: pointer;
+
+}
+.pam:hover{
+background-color: rgb(179, 219, 206);
+}
+.pad span{
+font-weight: bold;
+}
+a{
+font-size: 14px;
+text-decoration: none;
+}
+.pad1{
+display: flex;
+gap:20px;
+padding:1% 20%;
+margin-bottom: 1%;
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+#alert,#alert2{
+color:red;
+font-size: 10px;
+display: none;
+}
+
+
+@media all and (min-width:320px) and (max-width:650px){
+#container{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+}
+#container>div{
+    width:90%;
+    margin: auto;
+}
+
+}
