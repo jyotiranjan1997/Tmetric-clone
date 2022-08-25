@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link rel="stylesheet" href="./style1/login.css">
+    <style>
+        #Logout{
+           margin-bottom: 250px;
+        }
+        .pal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .pal>div{
+           
+            background-color: rgb(204, 241, 204);
+            color:rgb(14, 88, 14) ;
+            padding: 0 30px;
+            padding-right: 70px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .pal p{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="signup">
+        <div>
+            <div>
+                <img src="https://id.tmetric.com/images/tmetric_logo_and_text.svg" alt="">
+            </div>
+            <div>
+                 <p>  Logout  </p>
+            </div>
+        </div>
+        
+        <!-- signup form start here -->
+
+        <form action="" id="form">
+            <div class="pal">
+                <div>
+                    <p> You have been successfully logged out. </p>
+                </div>
+            </div>
+            
+            <div class="pad">
+                <button onclick="logout()" id="Logout"> Proceed to Login</button>
+            </div>
+        </form>
+
+        <!-- Login credetiontial end here -->
+
+    </div>
+
+    <!-- This one for policy & end -->
+    
+</body>
+</html>
+<script >
+  
+  function logout(){
+    event.preventDefault()
+    window.location.href="login.html";
+  }
+
+</script>
