@@ -41,6 +41,8 @@ function displayBrands(brandsLogo){
     })
 }
 
+// Business Tools Javascript Code Start Here
+
 window.reload = btn1()
 function bt (){
     btn1()
@@ -272,3 +274,135 @@ function btn6(){
     
 }
 
+// services Javascript Code Start Here
+let services = [
+    {
+        img : "https://tmetric.com/media/cshbmvwf/logo-integration-gsuite.svg",
+    },
+    {
+        img : "https://tmetric.com/media/fnbggshs/logo-integration-msoffice.svg",
+    },
+    {
+        img : "https://tmetric.com/media/plvb1mg0/logo-integration-gkeep.svg",
+    },
+    {
+        img : "https://tmetric.com/media/smflyk5w/logo-integration-github.svg",
+    },
+    {
+        img : "https://tmetric.com/media/kbrcntmi/logo-integration-excel.svg",
+    },
+    {
+        img : "https://tmetric.com/media/4aeci1fh/logo-integration-asana.svg",
+    },
+    {
+        img : "https://tmetric.com/media/caxbzjss/logo-integration-jira.svg",
+    },
+    {
+        img : "https://tmetric.com/media/dw2nwjwv/logo-integration-gitlab.svg",
+    },
+    {
+        img : "https://tmetric.com/media/me5ih5eu/logo-integration-gdocs.svg",
+    },
+    {
+        img : "https://tmetric.com/media/0bzmfrlf/logo-integration-trello.svg",
+    },
+    {
+        img : "https://tmetric.com/media/sdaj41fi/logo-integration-redmine.svg",
+    },
+    {
+        img : "https://tmetric.com/media/1xedbfav/logo-integration-zendesk.svg",
+    },
+    {
+        img : "https://tmetric.com/media/n3dmgi1p/logo-integration-wrike.svg",
+    }
+
+]
+
+displayServices(services)
+function displayServices(services){
+    services.map((el,index)=>{
+        let div = document.createElement("div");
+        let img = document.createElement("img");
+        img.src = el.img;
+        div.append(img);
+        document.querySelector("#service_container").append(div);
+    })
+}
+
+// Customers Reviews Javascript Code Started Here
+
+let business = [
+    {
+        img:"https://tmetric.com/media/wlmpffzm/logo_business_endygo.png",
+    },
+    {
+        img:"https://tmetric.com/media/0ddgehbk/logo_business_itsyndicate.png",
+    },
+    {
+        img:"https://tmetric.com/media/eozchehq/logo_business_pulso.png",
+    },
+    {
+        img:"https://tmetric.com/media/rmvok0xh/logo_business_050media.png",
+    },
+    {
+        img:"https://tmetric.com/media/ccpn231z/logo-business-jot-digi-tal.svg",
+    },
+    {
+        img:"https://tmetric.com/media/z0fhmi1j/logo-business-freshlab.svg",
+    },
+    {
+        img:"https://tmetric.com/media/xjogm2h2/logo-business-mvad.svg",
+    },
+    {
+        img:"https://tmetric.com/media/nvalaok1/logo_business_swaven.png",
+    }
+
+]
+
+
+displayBusiness(business)
+function displayBusiness(business){
+    business.map(function(el,index){
+        let div = document.createElement("div");
+        let img = document.createElement("img");
+        img.src = el.img;
+        div.append(img);
+        document.querySelector("#business").append(div);
+    })
+}
+
+let factsMain = [
+    {
+        img:"https://tmetric.com/media/zrvmvbl3/icon-straightforward.svg",
+        text:"The most straightforward time tracking app",
+    },
+    {
+        img : "https://tmetric.com/media/opdfdo3l/icon-platforms.svg",
+        text:"Available on all platforms: macOS, Windows, Linux, iOS, and Android",
+    },
+    {
+        img:"https://tmetric.com/media/igkmpmix/icon-freetrial.svg",
+        text:"Free plan with basic time tracking for a team up to 5",
+    },
+    {
+        img:"https://tmetric.com/media/htxfmpoe/icon-reasonableprice.svg",
+        text:"Reasonable price makes it affordable for anyone",
+    },
+    {
+        img:"https://tmetric.com/media/0uyowzzu/icon-multilang.svg",
+        text:"Multilanguage solution",
+    },
+]
+
+displayFacts(factsMain);
+function displayFacts(factsMain){
+    factsMain.map(function(el,index){
+        let div = document.createElement("div");
+        let img = document.createElement("img");
+        img.src = el.img;
+        let desc = document.createElement("p");
+        desc.innerHTML = el.text;
+        div.append(img,desc);
+        document.querySelector("#facts_main").append(div);
+    })
+}
