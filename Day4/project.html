@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aa3acc1691.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="project.css">
+    <title>Project</title>
+</head>
+<body>
+     <div id="all_page">
+       
+
+        <div id="sidebar">
+      
+
+        </div>
+
+
+        <img id="heading_img" src="https://app.tmetric.com/images/tmetric_logo_and_text.svg" alt="">
+
+            <div id="project_page">
+              
+
+                <div id="Project_page_head">
+                    <h1>Projects</h1>
+                <button id="popupbtn" onclick="popup()">Add Project</button>
+                <h2 id="count">0 project</h2>
+                </div>
+
+                <div id="project_table">
+                    <table>
+                       <thead>
+                        <tr>
+                            <th>Delete</th>
+                            <th>Projects</th>
+                            <th>Code </th>
+                            <th>Team</th>
+                        </tr>
+                       </thead>
+                       <tbody>
+                        
+                       </tbody>
+                         
+                    </table>
+                </div>
+    
+                <div id="form_bar">
+                    <form action="" onsubmit="submit_form()">
+                        <h2 onclick="popout()" style="margin-left: 25px;">Close &nbsp &nbsp<i class="fa-solid fa-xmark"></i></h2>
+                     <h1>Add Project Details</h1>
+                     <input type="text" name="" id="name" placeholder="Project Name" required>
+                     <input type="number" name="" id="code" placeholder="Add project code" required>
+                     <input type="text" name="" id="manager" placeholder="Add manager" required>
+                     <input type="text" name="" id="Client" placeholder="Add Client" required>
+                     <input type="text" name="" id="Notes" placeholder="Notes" required>
+                     <input type="count" name="" id="team" placeholder="Add total member in team " required>
+                     <input type="submit" name="" id="submit" value="submit" >
+                    </form>
+                 </div>
+            </div>
+
+               
+    
+            <a href=""></a>
+
+     </div>
+      
+</body>
+</html>
+
+<script type="module">
+    import sidebar from '/components/sidebar.js'
+    document.getElementById('sidebar').innerHTML=sidebar()
+</script>
+
+<script src="sidebar1.js"></script>
+<script src="project.js"></script>
