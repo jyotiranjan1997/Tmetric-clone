@@ -406,3 +406,72 @@ function displayFacts(factsMain){
         document.querySelector("#facts_main").append(div);
     })
 }
+
+// Customer Opinons JS
+function b1(){
+    document.querySelector("#left_data>p").innerText = "We ultimately went with TMetric because it checked a lot of items on our want list. It’s both a desktop and web app, and has an API that we were able to integrate with our business management software. While that was the biggest selling point, we also really like the user interface, the Chrome extension, and built-in integration with Jira.";
+    document.querySelector("#autor>p").innerText = "BizStream team";
+    document.querySelector("#right_data>img").src = "https://tmetric.com/media/hznb1sgs/photo-software-developers.png";
+    document.querySelector("#b1").style.color = "#3070f0";
+    document.querySelector("#b5").style.color = "#212529"
+    document.querySelector("#b4").style.color = "#212529"
+    document.querySelector("#b3").style.color = "#212529"
+    document.querySelector("#b2").style.color = "#212529"
+    document.querySelector("#b6").style.color = "#212529"
+}
+function b2(){
+    document.querySelector("#left_data>p").innerText = "We’ve found TMetric to be both user friendly and robust. It was easy to setup which allowed us to begin leveraging the tool immediately. It also provides multiple layers of reporting which provides value to our organization on a number of different levels.";
+    document.querySelector("#autor>p").innerText = "Brian Reilly, BankBound";
+    document.querySelector("#right_data>img").src = "https://tmetric.com/media/dhbotvr1/photo-marketers.png";
+    document.querySelector("#b2").style.color = "#3070f0";
+    document.querySelector("#b5").style.color = "#212529"
+    document.querySelector("#b4").style.color = "#212529"
+    document.querySelector("#b3").style.color = "#212529"
+    document.querySelector("#b6").style.color = "#212529"
+    document.querySelector("#b1").style.color = "#212529"
+}
+function b3(){
+    document.querySelector("#left_data>p").innerText = "TMetric is faster, more convenient and cheaper, the support is responsive and they fixed some bugs quickly.";
+    document.querySelector("#autor>p").innerText = "Swen Roethlisberger, Floowedit";
+    document.querySelector("#right_data>img").src = "https://tmetric.com/media/bxyho4oy/photo-designers.png";
+    document.querySelector("#b3").style.color = "#3070f0";
+    document.querySelector("#b5").style.color = "#212529"
+    document.querySelector("#b4").style.color = "#212529"
+    document.querySelector("#b6").style.color = "#212529"
+    document.querySelector("#b2").style.color = "#212529"
+    document.querySelector("#b1").style.color = "#212529"
+}
+function b4(){
+    document.querySelector("#left_data>p").innerText = "I recently transitioned from full-time employee to ‘consultant’. Needed an app to track projects, tasks and generate billing based on our agreement. TMetric handles this elegantly and I can access from my iPhone, iPad or PC- awesome!";
+    document.querySelector("#autor>p").innerText = "Jim Rolph, Manufacturer's Representative at Gorman Company";
+    document.querySelector("#right_data>img").src = "https://tmetric.com/media/2pdfttnr/photo-contractors.png";
+    document.querySelector("#b4").style.color = "#3070f0";
+    document.querySelector("#b5").style.color = "#212529"
+    document.querySelector("#b6").style.color = "#212529"
+    document.querySelector("#b3").style.color = "#212529"
+    document.querySelector("#b2").style.color = "#212529"
+    document.querySelector("#b1").style.color = "#212529"
+}
+function b5(){
+    document.querySelector("#left_data>p").innerText = "After five months we are very happy with the app and will gladly renew the service. We are still finding new uses for it within our organization and it’s been pivotal for helping us gather better decision-making information, grow our topline and reduce our bottomline.";
+    document.querySelector("#autor>p").innerText = "Galeno Chua, The Idea Founding Principal";
+    document.querySelector("#right_data>img").src = "https://tmetric.com/media/ipkhp5ts/photo-consulting.png";
+    document.querySelector("#b5").style.color = "#3070f0";
+    document.querySelector("#b6").style.color = "#212529"
+    document.querySelector("#b4").style.color = "#212529"
+    document.querySelector("#b3").style.color = "#212529"
+    document.querySelector("#b2").style.color = "#212529"
+    document.querySelector("#b1").style.color = "#212529"
+}
+function b6(){
+    document.querySelector("#left_data>p").innerText = "There are plenty of available applications to monitor working time. We chose TMetric because of the suitable price and compatibility with Trello and Google Documents, which we use every day in our company.";
+    document.querySelector("#autor>p").innerText = "Patryk Hoffmann, MyLead";
+    document.querySelector("#right_data>img").src = "https://tmetric.com/media/1nlgnvyj/photo-freelance.png";
+    document.querySelector("#b6").style.color = "#3070f0";
+    document.querySelector("#b5").style.color = "#212529"
+    document.querySelector("#b4").style.color = "#212529"
+    document.querySelector("#b3").style.color = "#212529"
+    document.querySelector("#b2").style.color = "#212529"
+    document.querySelector("#b1").style.color = "#212529"
+
+}

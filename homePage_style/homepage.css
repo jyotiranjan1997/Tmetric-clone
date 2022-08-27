@@ -4,9 +4,7 @@ body{
     font-family: sans-serif;
     color: #212529;
 }
-#homepage{
-    margin-top: 4%;
-}
+
 
 /* =========================================================
 Top Section CSS Starts Here
@@ -19,7 +17,7 @@ Top Section CSS Starts Here
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 3%;
     padding-bottom: 10px;
 }
 .flatemail{
@@ -92,6 +90,7 @@ Top Section CSS Starts Here
     border-top-left-radius: 5px;
     border-bottom-left-radius:5px
 }
+
 #btn-area{
     display: flex;
     gap: 30px;
@@ -487,6 +486,102 @@ Business List CSS Start Here
     font: 700 1.25rem/1.4 PTRootUIBold,sans-serif;
     
 }
+/* =====================================
+Customer Reviews CSS starts here
+===================================== */
+#customer_reviews{
+    height: auto;
+    padding-bottom: 5%;
+}
+#customer_reviews>h2{
+    text-align: center;
+    font: bold 2.25rem/1.166 ObjectivityBold,sans-serif;
+    color: #292e33;
+}
+#buttons_list{
+    display: flex;
+    /* gap: 7%; */
+    gap: 20px;
+    border-top: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+}
+#buttons_list>button{
+    padding: 20px 40px;
+    border: 0px;
+    background-color: white;
+    font-family: PTRootUIBold,sans-serif;
+    color: #777e85;
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+#left_data>p{
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #212529;
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+#container_main,#buttons_list{
+    width: 90%;
+    margin: auto;
+}
+#container_main{
+    height: auto;
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#left_data{
+    width: 70%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#right_data{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#right_data>img{
+    /* width: 70%; */
+    box-shadow: -20px 30px 30px rgb(7 13 20 / 16%);
+}
+#auth>#autor{
+    border-top: 1px solid rgb(196, 194, 194);
+    /* width: 30%; */
+}
+#auth{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+#left_data a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: PTRootUIMedium,sans-serif;
+    color: #3070f0;
+    transition: all .5s ease;
+}
+#autor>p{
+    margin-bottom: 9px;
+    font: 700 1rem/1.5 PTRootUIBold,sans-serif;
+}
+#autor>img{
+    margin-bottom: 9px;
+}
+#buttons_list>button:hover{
+    color: #3070f0;
+}
 
 /* ===================================
 Start-Box Css Here
@@ -697,6 +792,10 @@ facts List CSS Start Here
 .start-box h2{
     font: bold 2rem/1.125 ObjectivityBold,sans-serif;
 }
+#customer_reviews{
+    display: none;
+}
+
 
 }
 
