@@ -99,10 +99,44 @@
       font-weight: 30px;
      
        }
+       #container7 {
+          margin: 3%;
+            position: relative;
+        }
+        #container7 >img{
+            width: 100%;
+        }
+        #container7 >h1{
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            margin-left: 500px;
+          
+        }
+  
+        #container7>button {
+            height: 30px;
+            width: 100px;
+            border-radius: 5px;
+            position: absolute;
+            top: 110px;
+            left: 170px;
+            margin-left: 500px;
+            border: 0px;
+            background-color: blue;
+            color: aliceblue;
+        }
+        #container8{
+            width: 100%;
+           display: flex;
+           margin: auto;
+        justify-content: space-evenly;
+        }
         
     </style>
 </head>
 <body>
+    
     <div  id="container1">
         <h1>Pricing</h1>
         <p>All plans include free 30-day trial. No credit card required!</p>
@@ -111,14 +145,15 @@
   <div id="container2">
     <div>
         <label>Monthly</label>
-        <input id="paymentPeriod" type="checkbox">
+        <input id="paymentPeriod" type="checkbox" value="monthly">
         <label> Annually </label>
-        <input id="paymentPeriod" type="checkbox">
+        <input id="paymentPeriod" type="checkbox" value="yearly">
     </div>
   
     <div >
         <label  >Team Size  </label>
         <input id="count"
+               oninput="reload()"
                type="number"
                value="1"
                min="1"
@@ -134,7 +169,7 @@
   <div id="container3">
     <div id="Business">
         <h1>Business</h1>
-        <h2>$<span>7</span>/month</h2>
+        <h2>$<span id="count1">7</span>/month</h2>
        <p>Time tracking</p>
        <p>Unlimited projects and clients</p>
         <p>Reporting</p>
@@ -160,7 +195,7 @@
     </div>
     <div>
         <h1>Professional </h1>
-        <h2>$<span>5</span>/month</h2>
+        <h2>$<span id="count2">5</span>/month</h2>
        <p>Time tracking</p>
        <p>Unlimited projects and clients</p>
         <p>Reporting</p>
@@ -188,7 +223,7 @@
     </div>
     <div>
         <h1>Free</h1>
-        <h2>$<span>0</span>/month</h2>
+        <h2>$<span id="count3">0</span>/month</h2>
        <p type="dim">Time tracking</p>
        <p>Unlimited projects and clients</p>
         <p>Reporting</p>
@@ -252,10 +287,52 @@
  </div>
  
 
- <div>
+ <div id="container7">
 
     <img src="https://tmetric.com/media/shvmqkff/colored-banner-image.png" alt="">
+
+      <h1>Make time work for you!</h1>
+    <button>Start Free Trial</button>
  </div>
+
+  <div id="container8">
+    
+    <div>
+ 
+        <h4>Application</h4>
+        <h4>Desktop</h4>
+        <h4>ios</h4>
+        <h4>Android</h4>
+    </div>
+
+    <div>
+        <h4>Browser Extensions</h4>
+        <h4>Chrome</h4>
+        <h4>Firefox</h4>
+        <h4>Opera</h4>
+        <h4>Edge</h4>
+        <h4>Safari</h4>
+    </div>
+
+    <div>
+        <h4>Resources</h4>
+        <h4>Solutions</h4>
+        <h4>Integrations</h4>
+        <h4>Help</h4>
+        <h4>Time Trackers Comparison</h4>
+        <h4> Blog</h4>
+    </div>
+
+    <div>
+ 
+        <h4>About</h4>
+        <h4>About TMetric</h4>
+        <h4>Terms of Service</h4>
+        <h4>Privacy Policy</h4>
+        <h4>Cookies Policy</h4>
+    </div>
+
+  </div>
 
 </body>
 </html>
