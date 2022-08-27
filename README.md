@@ -7,9 +7,9 @@ TMetric is time tracking software operated by TMetric team, headquartered in Pra
 Tmetric webiste looks very amazing and introduced with various type of languages like JavaScript, HTML, CSS etc. There are the some important details regarding with this project which is mentioned below:
 
 <ul dir="auto">
- <ol dir="auto">◉ JavaScript : 32.8%</ol>
- <ol dir="auto">◉ HTML : 47.7%</ol>
- <ol dir="auto">◉ CSS : 19.5%</ol>
+ <ol dir="auto">◉ JavaScript : 40.1%</ol>
+ <ol dir="auto">◉ HTML : 35.9%</ol>
+ <ol dir="auto">◉ CSS : 24.0%</ol>
  </ul>
  
  This report is provided by the Github language used stats. So, this is the total percentage of the coding languages. Now we explain our project in details. 
