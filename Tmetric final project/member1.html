@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aa3acc1691.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1/sidebar.css">
+    <link rel="stylesheet" href="style1/project.css">
+    <title>Project</title>
+</head>
+<body>
+     <div id="all_page">
+        <div id="sidebar">
+
+        </div>
+            <div id="project_page">
+                <div id="Project_page_head">
+                    <h1>Members</h1>
+                <button id="popupbtn" onclick="popup()">Add Member</button>
+                <h2 id="count">0 Member</h2>
+                </div>
+                <div id="project_table">
+                    <table>
+                       <thead>
+                        <tr>
+                            <th class="tt">Name</th>
+                            <th class="tt">Email</th>
+                            <th class="tt">Start Date</th>
+                            
+                            <th class="tt">Status</th>
+                            <th class="tt">Delete Members</th>
+                        </tr>
+                       </thead>
+                       <tbody>
+
+
+                       </tbody>     
+                    </table>
+                </div>
+                <div id="form_bar">
+                    <form action="" onsubmit="submit_form()">
+                        <h2 onclick="popout()" style="margin-left: 25px;">Close &nbsp &nbsp<i class="fa-solid fa-xmark"></i></h2>
+                     <h1>Add Member Details</h1>
+                     <input type="text" name="" id="name" placeholder="Enter member Name" required>
+                     <input type="text" name="" id="code" placeholder="Add Email" required>
+                     <input type="date" id=date>
+                     
+                     <input type="submit" name="" id="submit" value="submit" >
+                    </form>
+                 </div>
+            </div>
+
+            <a href=""></a>
+
+
+     </div>
+</body>
+</html>
+
+<script type="module">
+    import sidebar from './homePage_script/components/sidebar.js'
+document.getElementById('sidebar').innerHTML=sidebar();
+let profile_data=JSON.parse(localStorage.getItem("profile"));
+document.getElementById("prfl_name").innerText=profile_data.name;
+
+</script>
+<script src="./scripts1/sidebar1.js"></script>
+<script src="./scripts1/member1.js"></script>

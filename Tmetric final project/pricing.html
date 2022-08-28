@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1/navbar.css">
+    <link rel="stylesheet" href="style1/footer.css">
+    <style>
+        #container1{
+            height: 400px;
+            width: 100%;
+            margin-top: -100px;
+            text-align: center;
+        background-color: rgb(210, 241, 10);
+        }
+
+        #container1>h1{
+        font-size: 50px;
+        margin-top: 100px;
+        font-style: italic;
+        padding-top: 150px;
+        }
+        #container2{
+            margin-top: 2%;
+            display: flex;
+            gap: 10%;
+            justify-content: space-evenly;
+            font-size: 40px;  
+        }
+        #container2:first-child{
+           margin-right: -100px;  
+        }
+        #container2:last-child{
+           margin-right: -500px;  
+        }
+        #paymentPeriod{
+            width:30px;
+            height:30px;
+        }
+        #container3{
+            display: grid;
+            margin-top: 50px;
+            grid-template-columns: repeat(3,1fr);
+        }
+        #container3>div>p{
+        font-size: 18px;
+        }
+        #container3>div{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid blue;
+        }
+        #container4{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 80px;
+        }
+        #container4>button{
+            height: 50px;
+            width: 150px;
+            border: 0px;
+            color:azure ;
+            background-color: blue;
+            border-radius: 8px;
+        }
+        #container4>button:hover{
+           
+           height: 50px;
+           width: 150px;
+           border: 0px;
+           border: 1px solid rgb(25, 25, 100);
+           color:white ;
+           background-color: rgb(47, 47, 155);
+           border-radius: 8px;
+       }
+       #container41{
+          text-align: center;
+       }
+       #container5>h1{
+        text-align: center;
+       }
+       #container5>p{
+        display: grid;
+      margin-left: 550px;
+      font-weight: 30px;
+     
+       }
+
+       #container6>h1{
+        margin-top: 20px;
+        text-align: center;
+       }
+       #container6>p{
+        display: grid;
+      margin-left: 550px;
+      font-weight: 30px;
+     
+       }
+       #container7 {
+          margin: 3%;
+            position: relative;
+        }
+        #container7 >img{
+            width: 100%;
+        }
+        #container7 >h1{
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            margin-left: 500px;
+          
+        }
+  
+        #container7>button {
+            height: 30px;
+            width: 100px;
+            border-radius: 5px;
+            position: absolute;
+            top: 110px;
+            left: 170px;
+            margin-left: 500px;
+            border: 0px;
+            background-color: blue;
+            color: aliceblue;
+        }
+        #container8{
+            width: 100%;
+           display: flex;
+           margin: auto;
+        justify-content: space-evenly;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <!-- inport and export  -->
+        
+    </div>
+    
+    <div  id="container1">
+        <h1>Pricing</h1>
+        <p>All plans include free 30-day trial. No credit card required!</p>
+    </div>
+
+  <div id="container2">
+    <div>
+        <label>Monthly</label>
+        <input id="paymentPeriod" type="checkbox" value="monthly">
+        <label> Annually </label>
+        <input id="paymentPeriod" type="checkbox" value="yearly">
+    </div>
+  
+    <div >
+        <label  >Team Size  </label>
+        <input id="count"
+               oninput="reload()"
+               type="number"
+               value="1"
+               min="1"
+               max="200" />
+        <input  id="range"
+               type="range"
+               value="1"
+               min="1"
+               max="200">
+    </div>
+  </div>
+
+  <div id="container3">
+    <div id="Business">
+        <h1>Business</h1>
+        <h2>$<span id="count1">7</span>/month</h2>
+       <p>Time tracking</p>
+       <p>Unlimited projects and clients</p>
+        <p>Reporting</p>
+         <p>  Timer button in 50+ web apps</p>
+         <p> Calendar integrations: Google, Outlook</p>
+       <p> Billable rates and money tracking</p>
+       <p> Budgeting for projects</p>
+        <p> Invoicing</p>
+       <p> Task management</p>
+        <p>   Activity levels for employees</p>
+       <p>  Apps and sites usage reports</p>
+       <p> Screenshots capturing</p>
+       <p>  Client logins for access to reports</p>
+       <p> Paid time off tracking</p>
+       <p>Payroll for employees</p>
+       <p>Time tracking permissions</p>
+       <p>  Time-sync with Jira and QuickBooks</p>
+       <p>  Time-sync with Jira and QuickBooks</p>
+       <p>  Time Off Calendar</p>
+       <p> Work Schedule</p>
+       <p>Team Dashboard</p>
+        
+    </div>
+    <div>
+        <h1>Professional </h1>
+        <h2>$<span id="count2">5</span>/month</h2>
+       <p>Time tracking</p>
+       <p>Unlimited projects and clients</p>
+        <p>Reporting</p>
+         <p>  Timer button in 50+ web apps</p>
+         <p> Calendar integrations: Google, Outlook</p>
+       <p> Billable rates and money tracking</p>
+       <p> Budgeting for projects</p>
+        <p> Invoicing</p>
+       <p> Task management</p>
+        <p>   Activity levels for employees</p> 
+
+
+        <p> <s> Apps and sites usage reports</s></p>
+        <p><s> Screenshots capturing</s></p>
+        <p> <s> Client logins for access to reports</s></p>
+        <p> <s>Paid time off tracking</s></p>
+        <p><s>Payroll for employees</s></p>
+        <p><s>Time tracking permissions</s></p>
+        <p> <s> Time-sync with Jira and QuickBooks</s></p>
+        <p>  <s>Time-sync with Jira and QuickBooks</s></p>
+        <p> <s> Time Off Calendar</s></p>
+        <p><s> Work Schedule</s></p>
+        <p><s>Team Dashboard</s></p>
+
+    </div>
+    <div>
+        <h1>Free</h1>
+        <h2>$<span id="count3">0</span>/month</h2>
+       <p type="dim">Time tracking</p>
+       <p>Unlimited projects and clients</p>
+        <p>Reporting</p>
+         <p>  Timer button in 50+ web apps</p> 
+         <p> <s>Calendar integrations: Google, Outlook</s></p>
+
+         <p> <s>Billable rates and money tracking</s></p>
+       <p> <s>Budgeting for projects</s></p>
+        <p><s> Invoicing</s></p>
+       <p> <s>Task management</s></p>
+        <p>  <s> Activity levels for employees</s></p> 
+
+
+        <p> <s> Apps and sites usage reports</s></p>
+        <p><s> Screenshots capturing</s></p>
+        <p> <s> Client logins for access to reports</s></p>
+        <p> <s>Paid time off tracking</s></p>
+        <p><s>Payroll for employees</s></p>
+        <p><s>Time tracking permissions</s></p>
+        <p> <s> Time-sync with Jira and QuickBooks</s></p>
+        <p>  <s>Time-sync with Jira and QuickBooks</s></p>
+        <p> <s> Time Off Calendar</s></p>
+        <p><s> Work Schedule</s></p>
+        <p><s>Team Dashboard</s></p>
+         
+    </div>
+  </div>
+
+  <div id="container4">
+   <button>
+     <a href="https://app.tmetric.com/register#_ga=2.29602111.1079892213.1661516202-1960426360.1661516202">Get Started</a></button>
+   <p>Fully Functional 30-Day Trial</p>
+  </div>
+  <div id="container41">
+    <p>Check out <a href="https://tmetric.com/features">
+        detailed plan comparison
+    </a></p>
+  </div>
+
+ <div id="container5">
+    <h1>How to Buy?</h1>
+     <p>1. Log in to your TMetric account. If you don't have one, sign up now.</p>
+    <p>2. On the main menu, click Workspace and select Subscription.</p>
+    <p>3. On the subscription page click Upgrade Now.</p>
+    <p>4. Enter your team size, select subscription plan, and click Proceed To Checkout.</p>
+    <p>5. On the shopping cart page enter your Billing Information and select Payment Options.</p>
+    <p>6. Click Continue to place an order.</p> 
+
+ </div>
+
+
+ <div id="container6">
+    <h1>Other Questions</h1>
+     <p>Q. Have a large team?</p>
+    <p>A. You can save money with our volume discount for teams of 40+ users. Learn more on FAQ. </p>
+    <p>Q. Running a non-profit organization?</p>
+    <p>A. We offer special pricing options for non-profit and education organizations. To apply, please contact the sales team.</p>
+    <p>Q. Have other sales questions?</p>
+    <p>A. Please contact our sales department at sales@tmetric.com</p> 
+
+ </div>
+ 
+
+ <div id="container7">
+
+    <img src="https://tmetric.com/media/shvmqkff/colored-banner-image.png" alt="">
+
+      <h1>Make time work for you!</h1>
+    <button>Start Free Trial</button>
+ </div>
+
+ <div id="footer">
+
+</div>
+
+</body>
+</html>
+
+<script type="module">
+    import navbar from './homePage_script/components/navbar.js'
+document.querySelector('#navbar').innerHTML = navbar()
+
+import footer from './homePage_script/components/footer.js'
+document.querySelector('#footer').innerHTML = footer()
+</script>
+
+<script src="scripts1/pricing.js"></script>

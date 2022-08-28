@@ -1,0 +1,272 @@
+w
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        #sidebar{
+            width:20%;
+            height:1000px;
+            border: 0.2px solid grey;
+        }
+        #container{
+            display: flex;
+            gap:1%;
+            position: relative;
+
+        }
+        #subprofile{
+            width:100%;
+            border: 0.2px solid grey;
+            border-radius: 10px;
+       
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 15%; 
+          
+
+        }
+        #profile{
+            width: 80%;
+             
+        }
+    
+        input{
+            width:100%;
+            font-size: 15px;
+            padding:8px;
+            border-radius: 5px;
+            border: 0.2px solid rgb(187, 187, 187);
+           
+        }
+        #picture{
+            display: flex;
+            gap:20px;
+            margin-bottom: 20px;
+            padding-left: 2%;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            background-color: rgb(230, 227, 227);
+
+        }
+        #picture>img{
+            border-radius: 40px;
+        }
+        p{
+            
+            font-size: 30px;
+            color: rgb(80, 80, 80);
+        }
+        #picture p{
+            font-size: 14px;
+        }
+        span{
+            margin-bottom: 10px;
+            color: grey;
+        }
+        input{
+            margin-bottom: 40px;
+        }
+        #change{
+            display:flex;
+            justify-content: center;
+            gap:20px;
+            border:0.5px solid grey;
+            background-color: black;
+            padding: 2% 3%;
+            position: sticky;
+            display: none;
+        }
+        #change>button{
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+        #change>button:nth-child(1){
+            background-color: rgb(54, 101, 204);
+        }
+        #change>button:nth-child(2){
+            background-color: grey;
+        }
+        .table{
+            width:90%;
+            border: 0.2px solid rgb(214, 214, 214);
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        #subdiv{
+            width: 91%;
+            padding-left: 5%;
+            padding-right: 4%;
+            display: flex;
+            justify-content: space-between; 
+            border: 0.2px solid rgb(214, 214, 214);
+            padding-top: 15px;
+            padding-bottom: 15px; 
+        }
+        th{
+           padding:15px 45px;
+           color: rgb(92, 92, 92);
+        }
+        td{
+           padding:15px 40px;
+           color: rgb(92, 92, 92);
+        }
+        .member{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .member button{
+            padding: 5px 8px;
+            font-size: 18px;
+            background-color: rgb(73, 82, 207);
+            border-radius: 3px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        #prfl2{
+            display: flex;
+            gap: 15px;
+        }
+        form{
+        /* border: 1px solid red; */
+        /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+        
+        margin: auto;
+        padding: 10px;
+      }
+      form *{
+        font-size: 14px;
+        border-radius: 10px;
+        
+        
+      }
+      #ss{
+        margin-top: 10px;
+      }
+      #create input{
+        margin-bottom: 8px;
+        width: 100%;
+      }
+      #create{
+        width: 30%;
+        margin: auto;
+        border: 0.3px solid grey;
+        padding: 15px;
+        border-radius: 8px;
+        position: absolute;
+        left: 40%;
+        top:10%;
+        background-color: white;
+        display: none;
+      }
+
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <!-- side bar appended here using import -->
+        </div>
+        <div id="profile">
+
+            <div id="create">
+                
+                <form>
+                  <input id="name" placeholder="Member Name" type="text" />
+                  <input id="desc" placeholder="email" type="email" />
+                  <!-- <label for="">Start Date:-</label> -->
+                  <input type="date" id="start" />
+                 
+                  <select id="priority">
+                    <option value="">Role</option>
+                    <option value="Owener">Owener</option>
+                    <option value="Team member">Team member</option>
+                   
+                  </select>
+                  <input id="ss"  style="background-color:rgb(48, 196, 233) ;" type="submit" value="Add" />
+                </form>
+              </div>
+            <!-- profile edit details here -->
+            <div id="prfl2">
+                <p>Members</p>
+                <div class="member">
+                    <span>0</span>
+                </div>
+            
+
+            </div>
+            
+           
+
+            <div id="subprofile">
+                
+                <div id="allPrfl">
+                        <div id="subdiv">
+                            <div class="member">
+                                <div>
+                                    <button id="addMember">Add member</button>
+                                </div>  
+                            </div>
+                   
+                            <div class="member">
+                                <div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    <div class="table">
+                        <table>
+                            <thead>
+                              <tr>
+                                <th class="tt">Name</th>
+                                <th class="tt">Email</th>
+                                <th class="tt">Start Date</th>
+                                <th class="tt">Role</th>
+                                <th class="tt">Status</th>
+                                <th class="tt">Delete Members</th>
+                              </tr>
+                            </thead>
+                           
+                            <tbody>
+                               <!-- Update the rows here using jsvascript -->
+                            </tbody>
+                          </table>
+                    </div>
+                    <div class="table">
+                        <table>
+                            <thead id="bdy">
+                           
+                            </thead>
+                           
+                            <tbody id="bdy" >
+                               <!-- Update the rows here using jsvascript -->
+                            </tbody>
+                          </table>
+                    </div>
+                   
+        
+                </div>
+                <!-- <div id="change">
+                    <button id="cancel">Cancel</button>
+                    <button id="change">Change</button>
+                    
+                </div> -->
+            
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+<script src="scripts1/member.js" ></script>
