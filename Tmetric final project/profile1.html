@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aa3acc1691.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1/sidebar.css">
+    <link rel="stylesheet" href="style1/profile.css">
+    <title>Project</title>
+    <style>
+
+          #subprofile{
+            width:100%;
+            border: 0.2px solid grey;
+            border-radius: 10px;
+        }
+        
+        #profile{
+            width: 100%;   
+        }
+        #allPrfl{
+            padding:0 25%;
+            padding-bottom: 5%;
+            padding-top: 2%;
+            
+        }
+        input{
+            width:100%;
+            font-size: 15px;
+            padding:8px;
+            border-radius: 5px;
+            border: 0.2px solid rgb(187, 187, 187);
+           
+        }
+        #picture{
+            display: flex;
+            gap:20px;
+            margin-bottom: 20px;
+            padding: 4px;
+            padding-left: 2%;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            background-color: rgb(230, 227, 227);
+
+        }
+        #picture>img{
+            border-radius: 40px;
+        }
+        p{
+            
+            font-size: 30px;
+            color: rgb(80, 80, 80);
+        }
+        #picture p{
+            font-size: 14px;
+        }
+        span{
+            margin-bottom: 10px;
+            color: grey;
+        }
+        input{
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+     <div id="all_page">
+        <div id="sidebar">
+        </div>
+            <div id="project_page">
+              
+
+                <div id="Project_page_head">
+                    <p>My Profile</p>
+                    
+                </div>
+                <div id="subprofile">
+
+
+                    <div id="project_table">
+                        <div id="profile">
+                            <!-- profile edit details here -->
+                            <div id="subprofile">
+                                
+                                <div id="allPrfl">
+                        
+                                </div>
+
+                </div>
+
+                </div>
+    
+                <div id="form_bar">
+                    <form action="" onsubmit="submit_form()">
+                        <h2 onclick="popout()" style="margin-left: 25px;">Close &nbsp &nbsp<i class="fa-solid fa-xmark"></i></h2>
+                     <h1>Add Project Details</h1>
+                     <input type="text" name="" id="name" placeholder="Project Name" required>
+                     <input type="number" name="" id="code" placeholder="Add project code" required>
+                     <input type="text" name="" id="manager" placeholder="Add manager" required>
+                     <input type="text" name="" id="Client" placeholder="Add Client" required>
+                     <input type="text" name="" id="Notes" placeholder="Notes" required>
+                     <input type="count" name="" id="team" placeholder="Add total member in team " required>
+                     <input type="submit" name="" id="submit" value="submit" >
+                    </form>
+                 </div>
+            </div>
+
+            <a href=""></a>
+
+     </div>
+      
+</body>
+</html>
+<script src="./scripts1/profile.js"></script>
+
+<script type="module">
+    import sidebar from './homePage_script/components/sidebar.js'
+document.getElementById('sidebar').innerHTML=sidebar();
+let profile_data=JSON.parse(localStorage.getItem("profile"));
+
+
+console.log(profile_data.name)
+document.getElementById("prfl_name").innerText=profile_data.name;
+
+</script>
+
+<script src="./scripts1/sidebar1.js"></script>
+<script src="./scripts1/project.js"></script>

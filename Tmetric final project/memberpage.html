@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      
+      #create{
+        /* border: 1px solid; */
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      form{
+        /* border: 1px solid red; */
+        /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+        width: 50%;
+        margin: auto;
+        padding: 30px;
+      }
+      form *{
+        font-size: 20px;
+        border-radius: 10px;
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+      }
+      table{
+        width: 50%;
+        /* border: 1px solid; */
+        border-collapse: collapse;
+      }
+      th,td{
+        /* border: 1px solid; */
+        border-collapse: collapse;
+        text-align: center;
+      }
+      th{
+        height: 50px;
+        background-color: greenyellow;
+        font-size: 20px;
+      }
+      td{
+        height: 35px;
+        border-bottom: 2px solid rgb(45, 203, 224);
+      }
+    </style>
+</head>
+<body>
+    <div id="create">
+        <h1>Members</h1>
+        <form>
+          <input id="name" placeholder="Member Name" type="text" />
+          <input id="desc" placeholder="email" type="email" />
+          <!-- <label for="">Start Date:-</label> -->
+          <input type="date" id="start" />
+         
+          <select id="priority">
+            <option value="">Role</option>
+            <option value="Owener">Owener</option>
+            <option value="Team member">Team member</option>
+           
+          </select>
+          <input style="background-color:rgb(48, 196, 233) ;" type="submit" value="Invite Member" />
+        </form>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Start Date</th>
+            
+            <th>Role</th>
+            <th>Status</th>
+            <th>Delete Members</th>
+          </tr>
+        </thead>
+        <tbody>
+           <!-- Update the rows here using jsvascript -->
+        </tbody>
+      </table>
+</body>
+</html>
+<script src="member.js"></script>
