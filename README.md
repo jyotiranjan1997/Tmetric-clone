@@ -92,9 +92,9 @@ We using different kinds of the technologies to make this website. These things 
  # Contributers
  
  Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
- 
+
+- [x] Jyoti Ranjan Mohanty - [GitHub Profile](https://github.com/jyotiranjan1997)
 - [x] Mukesh Kaushal - [GitHub Profile](https://github.com/imukeshkaushal) 
-- [x] Jyoti Ranjan - [GitHub Profile](https://github.com/jyotiranjan1997)
 - [x] Sumit Chimkar - [GitHub Profile](https://github.com/sumit6675)
 - [x] Debabrata Satapathy - [GitHub Profile](https://github.com/sumit6675)
 - [x] Karan Singh - [GitHub Profile](https://github.com/karnsing)
