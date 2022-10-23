@@ -10,7 +10,7 @@ Visit : https://wonderful-jelly-d74aac.netlify.app/
 Tmetric webiste looks very amazing and introduced with various type of languages like JavaScript, HTML, CSS etc. There are the some important details regarding with this project which is mentioned below:
 
 <ul dir="auto">
- <ol dir="auto">◉ JavaScript : 40.1%</ol>
+ <ol dir="auto">◉ JavaScript : 47.1%</ol>
  <ol dir="auto">◉ HTML : 35.9%</ol>
  <ol dir="auto">◉ CSS : 24.0%</ol>
  </ul>
